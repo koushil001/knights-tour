@@ -1,0 +1,103 @@
+/* Reset & basics */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Controls styling */
+.controls {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Center the board container */
+#board {
+  margin: 0 auto;
+  display: grid;
+  border: 3px solid #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: max-content;
+}
+
+/* Each chess cell */
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  user-select: none;
+  cursor: default;
+}
+
+/* White and Black cell colors - use checker pattern */
+.cell.white {
+  background-color: #fff;
+}
+
+.cell.black {
+  background-color: #222;
+  color: #eee;
+}
+
+/* Knight image */
+.knight {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 5px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Step number in cell */
+.step-number {
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+  font-size: 12px;
+  color: #e53935; /* Red */
+  z-index: 5;
+  font-weight: 700;
+  user-select: none;
+}
+
+/* Buttons styling */
+button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+input[type="range"] {
+  vertical-align: middle;
+}
