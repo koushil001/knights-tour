@@ -1,7 +1,5 @@
 # 🐴 Knight's Tour Visualization
 
-![Knight's Tour](https://upload.wikimedia.org/wikipedia/commons/7/7a/Knight_on_chessboard.svg)
-
 ## 📖 Project Overview
 
 This project visualizes the **Knight’s Tour** problem on a chessboard using JavaScript, HTML, and CSS. It animates the knight's moves across the board, showing the knight's path as it visits every square exactly once.
